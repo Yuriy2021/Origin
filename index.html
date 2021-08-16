@@ -13,21 +13,89 @@
     <div class="container">
         <header class="page-header padding-site">
             <div class="page-header-wrp">
-                <a href="" class="page-header-logo">
-                    <img src="img/logo.svg" alt="logo">
-                </a>
+                <a href="index.html" class="page-header-logo"><img src="img/logo.svg" alt="logo"></a>
                 <form action="#" class="page-header-search-form">
-                    <input class="page-header-search-btn" id="search-btn" type="search">
+                    <input class="page-header-search-btn" id="search-btn" type="search" maxlength="6">
+                    <label for="search-btn">
+                        <img src="img/search.svg" alt="icon">
+                    </label>
                 </form>
             </div>
             <div class="page-header-wrp">
-                <button class="menu-btn">
-                    <span></span>
-                </button>
-                <button class="account-btn">
-                </button>
-                <button class="cart-btn">
-                </button>
+                <div class="page-header-wrp-btn">
+                    <nav class="menu">
+                        <label class="menu-btn" for="menu-switch">
+                            <span></span>
+                        </label>
+                        <input id="menu-switch" type="checkbox">
+                        <ul class="menu-list">
+                            <li><a href="#" class="menu-list-close-btn"></a></li>
+                            <li><span class="menu-list-title">menu</span></li>
+                            <li class="menu-list-item">
+                                <a href="#">man</a>
+                                <ul class="menu-sublist">
+                                    <li class="menu-sublist-item">
+                                        <a href="#">Accessories</a>
+                                    </li>
+                                    <li class="menu-sublist-item">
+                                        <a href="#">Bags</a>
+                                    </li>
+                                    <li class="menu-sublist-item">
+                                        <a href="#">Denim</a>
+                                    </li>
+                                    <li class="menu-sublist-item">
+                                        <a href="#">T-Shirts</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#">woman</a>
+                                <ul class="menu-sublist">
+                                    <li class="menu-sublist-item">
+                                        <a href="#">Accessories</a>
+                                    </li>
+                                    <li class="menu-sublist-item">
+                                        <a href="#">Jackets &amp;&nbsp;Coats</a>
+                                    </li>
+                                    <li class="menu-sublist-item">
+                                        <a href="#">Polos</a>
+                                    </li>
+                                    <li class="menu-sublist-item">
+                                        <a href="#">T-Shirts</a>
+                                    </li>
+                                    <li class="menu-sublist-item">
+                                        <a href="#">Shirts</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#">kids</a>
+                                <ul class="menu-sublist">
+                                    <li class="menu-sublist-item">
+                                        <a href="#">Accessories</a>
+                                    </li>
+                                    <li class="menu-sublist-item">
+                                        <a href="#">Jackets &amp;&nbsp;Coats</a>
+                                    </li>
+                                    <li class="menu-sublist-item">
+                                        <a href="#">Polos</a>
+                                    </li>
+                                    <li class="menu-sublist-item">
+                                        <a href="#">T-Shirts</a>
+                                    </li>
+                                    <li class="menu-sublist-item">
+                                        <a href="#">Shirts</a>
+                                    </li>
+                                    <li class="menu-sublist-item">
+                                        <a href="#">Bags</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="account-btn"><img src="img/auth.svg" alt="icon"></a>
+                    <a href="#" class="cart-btn"><img src="img/cart.svg" alt="icon"></a>
+                </div>
             </div>
         </header>
 
