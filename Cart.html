@@ -95,8 +95,8 @@
                             </li>
                         </ul>
                     </nav>
-                    <a href="#" class="account-btn"><img src="img/auth.svg" alt="icon"></a>
-                    <a href="#" class="cart-btn"><img src="img/cart.svg" alt="icon"></a>
+                    <a href="Registration.html" class="account-btn"><img src="img/auth.svg" alt="icon"></a>
+                    <a href="Cart.html" class="cart-btn"><img src="img/cart.svg" alt="icon"></a>
                 </div>
             </div>
         </header>
@@ -182,9 +182,11 @@
                                 <input type="text" class="shipping-path" id=state placeholder="State">
                             </div>
                             <div>
-                                <input type="text" class="shipping-path" id=state placeholder="Postcode / Zip"><br>
+                                <input type="text" class="shipping-path" id=state-1 placeholder="Postcode / Zip"><br>
                             </div>
-                            <button class="shipping-button">GET A QUOTE</button>
+                            <button class="shipping-button">
+                                <span>GET A QUOTE</span>
+                            </button>
                         </form>
                     </div>
                     <div class="calculation">
@@ -197,30 +199,30 @@
                             <span class="grand-calc-txt-1">&#36;900</span>
                         </div>
                         <hr class="calc-line">
-                        <button class="proceed">
-                            <span class="proc-button-txt">proceed to checkout</span>
-                        </button>
+                        <form>
+                            <button class="proceed">
+                                <span class="proc-button-txt">proceed to checkout</span>
+                            </button>
+                        </form>
                     </div>
                 </section>
             </div>
-
-        </main>
-        <section class="subscribe">
-            <div class="subscribe-info">
-                <div class="subscribe-info-avatar"></div>
-                <p class="subscribe-info-txt">&laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi,
-                    <span>a&nbsp;pulvinar purus condimentum&raquo;</span>
-                </p>
-            </div>
-            <div class="subscribe-form-wrp">
-                <span class="subscribe-form-title">subscribe</span>
-                <span class="subscribe-form-subtitle">for our newletter and promotion</span>
-                <form action="#" class="subscribe-form">
-                    <input type="email" class="subscribe-form-email" placeholder="Enter your Email" required>
-                    <input type="submit" class="subscribe-form-btn" value="Subscribe">
-                </form>
-            </div>
-        </section>
+            <section class="subscribe">
+                <div class="subscribe-info">
+                    <div class="subscribe-info-avatar"></div>
+                    <p class="subscribe-info-txt">&laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi,
+                        <span>a&nbsp;pulvinar purus condimentum&raquo;</span>
+                    </p>
+                </div>
+                <div class="subscribe-form-wrp">
+                    <span class="subscribe-form-title">subscribe</span>
+                    <span class="subscribe-form-subtitle">for our newletter and promotion</span>
+                    <form action="#" class="subscribe-form">
+                        <input type="email" class="subscribe-form-email" placeholder="Enter your Email" required>
+                        <input type="submit" class="subscribe-form-btn" value="Subscribe">
+                    </form>
+                </div>
+            </section>
         </main>
     </div>
     <footer class="page-footer container">
@@ -236,7 +238,7 @@
             <a href="#" class="page-footer-socials-item-2"><img src="img/social-4.svg" alt="icon"></a>
         </div>
     </footer>
-    </div>
+
 
 </body>
 
