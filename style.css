@@ -1163,7 +1163,7 @@ padding: 8px 6px;
   padding: 20px;
   margin: 0 auto;
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(244,244,244, 0.7), rgba(244,244,244, 0.7)),url(img/subscribe-1.png);
+  background-image: linear-gradient(rgba(244,244,244, 0.7), rgba(244,244,244, 0.7)),url(img/footer-image.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1511,10 +1511,21 @@ justify-content: center;
   padding-left: 22px;
 }
 .cart-clear{
+  display: block;
   width: 235px;
   height: 50px;
   border: 1px solid #A4A4A4;
   background-color: #FFFFFF;
+}
+.cart-clear:hover{
+  background: #F16D7F;
+  border: 1px solid #000;
+  color: #000;
+}
+.cart-clear:active{
+  background: grey;
+  border: 1px solid #000;
+  color: #000;
 }
 .clear-button-text{
   font-family: Lato;
@@ -1547,6 +1558,8 @@ justify-content: center;
   margin-top: 20px;
 }
 .shipping-button{
+  display: block;
+  box-sizing: border-box;
   width: 101px;
   height: 35px;
   border: 1px solid #A4A4A4;
@@ -1558,6 +1571,16 @@ justify-content: center;
   color: #4A4A4A;
   background: #FFFFFF;
   margin-bottom: 51px;
+}
+.shipping-button:hover{
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+.shipping-button:active{
+  background: #fff;
+  border: 1px solid #F26376;
+  color: #F26376;
 }
 .calculation{
   width: 360px;
@@ -1610,12 +1633,23 @@ justify-content: center;
   margin-top: 21px;
 }
 .proceed{
+  display: block;
   width: 273px;
   height: 50px;
   background: #F16D7F;
   border:1px solid #F16D7F;
   margin-left: 44px;
   margin-top: 17px;
+}
+.proceed:hover{
+  background: #F16D7F;
+  border: 1px solid #000;
+  color: #000;
+}
+.proceed:active{
+  background: #4A4A4A;
+  border: 1px solid #000;
+  color: #000;
 }
 .proc-button-txt{
   font-family: Lato;
@@ -1636,4 +1670,143 @@ justify-content: center;
 }
 .exec-items{
   margin-left: 128px;
+}
+.registration-title{
+  max-width: 360px;
+  min-height: 149px;
+  margin-top: 64px;
+}
+.reg-txt{
+  display: block;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  padding-bottom: 20px;
+}
+.name-title{
+  width: 360px;
+  height: 45px;
+  border: 1px solid #A4A4A4;
+  margin-bottom:20px ;
+}
+.name-title-1{
+  margin-bottom: 20px;
+  width: 360px;
+  height: 45px;
+  border: 1px solid #A4A4A4;
+}
+.radio-btn{
+  width: 132px;
+
+}
+.title-sex{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+.login-title{
+  max-width: 360px;
+  min-height: 149px; 
+  margin-top: 33px;
+}
+.log-txt{
+  display: block;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  padding-bottom: 20px;
+}
+.email-title{
+  width: 360px;
+  height: 45px;
+  border: 1px solid #A4A4A4;
+  margin-bottom: 20px;
+}
+.pass-title{
+  width: 360px;
+  height: 45px;
+  border: 1px solid #A4A4A4;
+  margin-bottom: 15px;
+}
+.login-remarks{
+  display: block;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-bottom: 39px;
+}
+.join-btn{
+  width: 167px;
+  height: 50px;
+  background-color:#F16D7F;
+  border: 1px solid #F16D7F;
+}
+.join-btn:hover{
+  background-color: #837c7c;
+  border: 1px solid #837c7c;
+}
+.join-btn:active{
+  background-color: #111010;
+  border: 1px solid #111010;
+}
+.join-btn-txt{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.loyalty{
+  display: block;
+  margin-left:128px;
+  margin-top:64px;
+  width: 652px;
+  height: 334px;
+}
+.loyalty-title{
+  display: block;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  text-transform: uppercase;
+  padding-bottom: 22px;
+}
+.loyalty-txt{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  padding-bottom: 21px;
+}
+.list-txt{
+  list-style-type: none;
+  padding-bottom: 16px;
+}
+.list-txt::before{
+  content: url(img/marker.svg);
+  padding-right: 0,5em;
+}
+.content-group-1{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 96px;
 }
