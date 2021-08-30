@@ -1884,9 +1884,46 @@ justify-content: center;
     height: 116px;
   }
   .products{
-    margin: 154px auto;
+    margin: 154px auto 65px auto;
   }
   .products-txt{
     margin-bottom: 73px;
+  }
+  .products-item{
+    margin: 0 16px 16px 0;
+  }
+  .products-item:nth-child(3n-1){
+    margin: 0 16px 16px 0;
+  }
+  .products-btn{
+    margin-top: 32px;
+  }
+  .features{
+    flex-direction: column;
+    padding: 0;  
+  }
+  .features-item{
+    margin: 48px 0 48px 0;    
+  }
+  .features-item:nth-child(4n-1){
+    margin: 0;
+    margin-bottom: 64px;
+  }
+  .subscribe{
+    background-size: 314%;
+    background-position: 26% 27px;
+    background-color: rgba(244,244,244, 0.7);
+    flex-direction: column;
+  }
+  .subscribe-info{
+    margin: 0;
+    margin-top: 64px;    
+  }
+  .subscribe-form-wrp{
+    margin-top: 48px;
+    margin-bottom: 140px;
+  }
+  .page-footer{
+    padding: 30px 32px 30px 32px;
   }
 }
