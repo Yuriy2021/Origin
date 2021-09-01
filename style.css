@@ -1397,7 +1397,7 @@ border: 1px solid #EAEAEA;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .part-name{
-font-family: Lato;
+font-family: 'Lato';
 font-style: normal;
 font-weight: 300;
 font-size: 14px;
@@ -1423,7 +1423,7 @@ top: 93px;
 left: 540px;
 }
 .card-name{
-font-family: Lato;
+font-family: 'Lato';
 font-style: normal;
 font-weight: 300;
 font-size: 18px;
@@ -1433,7 +1433,7 @@ padding-top: 12px;
 padding-left: 442px;
 }
 .card-content{
-font-family: Lato;
+font-family: 'Lato';
 font-style: normal;
 font-weight: 300;
 font-size: 14px;
@@ -1447,7 +1447,7 @@ padding-left: 292px;
 padding-bottom: 33px;
 }
 .price{
-font-family: Lato;
+font-family: 'Lato';
 font-style: normal;
 font-weight: 300;
 font-size: 24px;
@@ -1514,7 +1514,7 @@ justify-content: center;
 .cart-item-title{
   width: 262px;
   height: 58px;
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -1525,7 +1525,7 @@ justify-content: center;
 .cart-item-group{
   width: 166px;
   height: 122px;
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -1562,7 +1562,7 @@ justify-content: center;
   color: #000;
 }
 .clear-button-text{
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1577,7 +1577,7 @@ justify-content: center;
   height: 50px;
 }
 .shipping-title{
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1598,7 +1598,7 @@ justify-content: center;
   width: 101px;
   height: 35px;
   border: 1px solid #A4A4A4;
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   font-size: 11px;
@@ -1631,7 +1631,7 @@ justify-content: center;
 }
 .calc-text{
   display: inline-block;
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
   font-size: 11px;
@@ -1648,7 +1648,7 @@ justify-content: center;
   color: #222222;
 }
 .grand-calc-txt-1{
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1687,7 +1687,7 @@ justify-content: center;
   color: #000;
 }
 .proc-button-txt{
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1714,7 +1714,7 @@ justify-content: center;
 }
 .reg-txt{
   display: block;
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1743,7 +1743,7 @@ justify-content: center;
 
 }
 .title-sex{
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   font-size: 11px;
@@ -1783,7 +1783,7 @@ justify-content: center;
 }
 .login-remarks{
   display: block;
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
@@ -1806,7 +1806,7 @@ justify-content: center;
   border: 1px solid #111010;
 }
 .join-btn-txt{
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1823,7 +1823,7 @@ justify-content: center;
 }
 .loyalty-title{
   display: block;
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -1833,7 +1833,7 @@ justify-content: center;
   padding-bottom: 22px;
 }
 .loyalty-txt{
-  font-family: Lato;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -1842,6 +1842,7 @@ justify-content: center;
   padding-bottom: 21px;
 }
 .list-txt{
+  width:311px;
   list-style-type: none;
   padding-bottom: 16px;
   position: relative;
@@ -2053,5 +2054,26 @@ justify-content: center;
   .exec-label{
     margin-bottom: 20px;
   }
-  
+  .registration-title{
+    margin-top: 40px;    
+  }
+  .registration-form{
+    margin-left: 16px;
+  }
+  .loyalty{
+    margin-left: 22px;
+    margin-top: 40px;
+  }
+  .loyalty-title{
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .loyalty-txt{
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .loyalty-list{
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
