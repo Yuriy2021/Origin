@@ -854,7 +854,7 @@ position: relative;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16,8px;
+  line-height: 17px;
   color: #9F9F9F;
 }
 .products-item {
@@ -1623,6 +1623,12 @@ justify-content: center;
   margin-left: 24px;
   padding-left: 16px;
   box-sizing: border-box;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
 }
 .cart-close{
   position: absolute;
@@ -1676,6 +1682,12 @@ justify-content: center;
   margin-bottom: 20px;
   padding-left: 18px;
   box-sizing: border-box;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
 }
 .shipping-button{
   display: block;
@@ -1713,6 +1725,13 @@ justify-content: center;
   justify-content: space-between;
   padding-top: 39px;
   padding-left: 218px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  text-transform: uppercase;
 }
 .calc-text{
   display: inline-block;
@@ -1746,6 +1765,13 @@ justify-content: center;
   justify-content: space-between;
   padding-top: 12px;
   padding-left: 153px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  text-transform: uppercase;
 }
 .calc-line{
   width: 275px;
@@ -1852,6 +1878,7 @@ justify-content: center;
   line-height: 13px;
   padding-left: 10px;
   padding-right: 20px;
+  color: #000000;
 }
 .title-sex{
   font-family: 'Lato';
@@ -2077,7 +2104,7 @@ justify-content: center;
   .catalog-subtitle-wrp{
     max-width: 736px;
     padding-top: 24px;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
     margin: 0 auto;
   }
   .products-cat-wrp{
@@ -2186,7 +2213,7 @@ justify-content: center;
     margin-right: 17px;
   }
   .exec-label{
-    margin-top: 64px;
+    margin-top: 48px;
   }
   .shipping-path {
     margin-top: 0;
@@ -2208,6 +2235,7 @@ justify-content: center;
     margin-top: 40px;
   }
   .loyalty-title{
+    padding-bottom: 32px;
     font-size: 16px;
     line-height: 19px;
   }
@@ -2261,6 +2289,9 @@ justify-content: center;
   .products-btn{
     margin-top: 24px;
   }
+  .categories{
+    margin-bottom: 0;
+  }
   .page-header-banner-title{
     font-size: 38px;
     line-height: 46px;
@@ -2280,8 +2311,8 @@ justify-content: center;
     max-width: 37px;
   }
   .trending-link-btn-title{
-    font-size: 12px;
-    line-height: 14px;       
+    font-size: 10px;
+    line-height: 12px;       
   }
   .list-size{
     padding-left: 43px;
@@ -2326,10 +2357,10 @@ justify-content: center;
     margin: 0 auto;
   }
   .products-item-cat{
-    margin: 0;
+    margin: 0 0 16px 0;
   }
   .products-item-cat:nth-child(5n){
-    margin: 0;
+    margin: 0 0 16px 0;
   }
   .subscribe-info{
     max-width: 343px;
@@ -2468,12 +2499,19 @@ justify-content: center;
     line-height: 17px;
   }
   .cart-quantity{
+    font-size: 10px;
+    line-height: 12px;
     width: 24px;
     height: 16px;
+    padding-left: 9px;
   }
   .cart-close{
     top: 24px;
     right: 16px;
+  }
+  .cart-close svg{
+    width: 10px;
+    height: 11px;
   }
   .button-group{
     width: 359px;
@@ -2493,8 +2531,16 @@ justify-content: center;
   .shipping-button{
     margin-bottom: 48px;
   }
+  .shipping-path{
+    font-size: 13px;
+    line-height: 16px;
+  }
   .calculation{
     margin: 0 auto;
+  }
+  .clear-button-text{
+    font-size: 12px;
+    line-height: 14px;
   }
   .content-group-reg{
     flex-direction: column;
