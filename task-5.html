@@ -1,43 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        function sum(a,b) {
-            return a + b            
-        }
-        
-        function sub(a,b) {
-            return a - b
-        }
 
-        function mul(a,b) {
-            return a * b
+        for (let a = "x"; a.length <= 20;) {
+            a += "x"
+            console.log(a)
         }
-
-        function div(a,b) {
-            return a / b
-        }
-
-        function mathOperation(arg1, arg2, operation) {
-            switch(operation) {
-                case 1:
-                    return sum(arg1, arg2);
-                case 2:
-                    return sub(arg1, arg2);
-                case 3:
-                    return mul(arg1, arg2);
-                case 4:
-                    return div(arg1, arg2);
-
-            }
-        }
-        
     </script>
 </body>
+
 </html>

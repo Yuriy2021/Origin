@@ -11,35 +11,25 @@
 <body>
     <script>
         'use strict'
-        let a, b;
-        a = prompt("Введите значение переменной а")
-        b = prompt("Введите значение переменной b")
+        const products = [
+            {
+                id: 3,
+                price: 200,
+            },
+            {
+                id: 4,
+                price: 900,
+            },
+            {
+                id: 1,
+                price: 1000,
+            },
+        ];
+        let new_price = 0;
+        products.forEach(element => {
+            element.price = element.price - element.price * 0.15
+        })
 
-
-        if (a >= 0 && b >= 0) {
-            let dif
-            dif = a - b
-            alert(dif)
-        }
-        if (a < 0 && b < 0) {
-            let mul
-            mul = a * b
-            alert(mul)
-        }
-        if (a >= 0 && b < 0) {
-            let sum
-            a = +a
-            b = +b
-            sum = a + b
-            alert(sum)
-        }
-        if (a < 0 && b >= 0) {
-            let sum
-            a = +a
-            b = +b
-            sum = a + b
-            alert(sum)
-        }
     </script>
 </body>
 
