@@ -11,9 +11,19 @@
 <body>
     <script>
         'use strict'
-        let Tc = prompt("Введите значение температуры в градусах по Цельсию")
-        let Tf = (9 / 5) * Tc + 32;
-        alert("Температура в градусах по Фаренгейту = " + Tf + "F")
+        // код на ES5
+        function Product(name, price) {
+            this.name = name;
+            this.price = price;
+        }
+
+        Product.prototype.make25PercentDiscount = function () {
+            this.price = this.price - this.price * 0.25;
+        };
+
+        let obj1 = new Product('product', 200);
+        obj1.make25PercentDiscount();
+
     </script>
 </body>
 

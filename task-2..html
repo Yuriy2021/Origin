@@ -11,9 +11,20 @@
 <body>
     <script>
         'use strict'
-        let name = "Василий"
-        let admin = name
-        alert(admin)
+        //код на ES6
+        class Product {
+            constructor(name, price) {
+                this.name = name;
+                this.price = price;
+            }
+
+            make25PercentDiscount() {
+                this.price = this.price - this.price * 0.25;
+            }
+        }
+
+        let obj2 = new Product('product2', 100);
+        obj2.make25PercentDiscount();
     </script>
 </body>
 
