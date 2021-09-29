@@ -11,20 +11,18 @@
 <body>
     <script>
         'use strict'
-        for (let i = 0; i <= 10; i++) {
-            if (i == 0) {
-                console.log(i + " -это ноль")
-            }
-
-            if ((i % 2) > 0) {
-                console.log(i + " -это нечетное число");
-            }
-
-            if ((i % 2) == 0) {
-                console.log(i + " -это четное число")
-            }
-
+        // код на ES5
+        function Product(name, price) {
+            this.name = name;
+            this.price = price;
         }
+
+        Product.prototype.make25PercentDiscount = function () {
+            this.price = this.price - this.price * 0.25;
+        };
+
+        let obj1 = new Product('product', 200);
+        obj1.make25PercentDiscount();
 
     </script>
 </body>

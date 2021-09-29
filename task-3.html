@@ -11,24 +11,32 @@
 <body>
     <script>
         'use strict'
-        const products = [
-            {
-                id: 3,
-                price: 200,
-            },
-            {
-                id: 4,
-                price: 900,
-            },
-            {
-                id: 1,
-                price: 1000,
-            },
-        ];
-        let new_price = 0;
-        products.forEach(element => {
-            element.price = element.price - element.price * 0.15
-        })
+        //код на ES5
+        function Post(author, text, date) {
+            this.author = author;
+            this.text = text;
+            this.date = date;
+        }
+
+        Post.prototype.edit = function () {
+            this.text = prompt('Введите текст');
+        };
+
+        function AttachedPost(author, text, date) {
+            Post.call(this, author, text, date);
+            this.highlighted = true;
+        }
+
+        AttachedPost.prototype = Object.create(Post.prototype);
+        AttachedPost.prototype.constructor = AttachedPost;
+
+        AttachedPost.prototype.makeTextHighlighted = function () {
+            this.highlighted = true;
+        };
+
+        let bObj = new AttachedPost('Peter', 'text2', '29.09.2021');
+        bObj.edit();
+        bObj.makeTextHighlighted();
 
     </script>
 </body>
