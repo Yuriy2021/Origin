@@ -25,6 +25,10 @@
         let variable = document.querySelector('p');
         variable.addEventListener('click', function (event) {
             console.log(event.target.classList);
+            event.target.classList.forEach(function (elem) {
+                console.log(elem);
+
+            });
         });
 
 
