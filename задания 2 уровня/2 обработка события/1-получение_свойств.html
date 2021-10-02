@@ -19,6 +19,13 @@
     свойство className), текст на кнопке.
     -->
     <script>
+        let variable = document.querySelector('button');
+        variable.addEventListener('click', function (event) {
+            console.log(variable.id);
+            console.log(variable.className);
+            console.log(variable.innerText)
+        })
+
     </script>
 </body>
 
