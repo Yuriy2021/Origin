@@ -110,7 +110,6 @@ class Basketlist {
     getBasket() {
         return fetch(`${API_URL}getBasket.json`)
             .then((response) => response.json())
-
             .catch((err) => console.log(err));
     }
     deleteFromBasket() {
@@ -121,8 +120,7 @@ class Basketlist {
                     const delBtn = document.querySelectorAll('.buy_btn__del');
                     delBtn.forEach(item => {
                         item.addEventListener('click', () => {
-                            this.basketGoods.splice(item, 1)
-                            console.log('Применение метода .removechild')
+                            this.basketGoods.contents.splice(item, 1)
                         });
                     });
                 } else {
@@ -143,9 +141,9 @@ class Basketlist {
                     const buyBtn = document.querySelectorAll('.buy-btn');
                     buyBtn.forEach(item => {
                         item.addEventListener('click', () => {
-                            this.basketGoods.push(item);
+                            this.basketGoods.contents.push(data)
                             // Временный вывод в консоль вместо добавления на страницу корзины.
-                            console.log(data)
+                            console.log(this.basketGoods.contents)
                         });
                     });
 
