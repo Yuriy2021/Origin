@@ -116,11 +116,14 @@ class Basketlist {
         fetch(`${API_URL}/deleteFromBasket.json`)
             .then((response) => { return response.json(); })
             .then((data) => {
+                console.log(data)
                 if (data.result == 1) {
                     const delBtn = document.querySelectorAll('.buy_btn__del');
                     delBtn.forEach(item => {
                         item.addEventListener('click', () => {
+
                             this.basketGoods.contents.splice(item, 1)
+                            console.log(this.basketGoods)
                         });
                     });
                 } else {
@@ -136,14 +139,13 @@ class Basketlist {
                 return response.json();
             })
             .then((data) => {
-
+                console.log(data)
                 if (data.result == 1) {
                     const buyBtn = document.querySelectorAll('.buy-btn');
                     buyBtn.forEach(item => {
                         item.addEventListener('click', () => {
-                            this.basketGoods.contents.push(data)
-                            // Временный вывод в консоль вместо добавления на страницу корзины.
-                            console.log(this.basketGoods.contents)
+                            this.basketGoods.contents.push(item)
+                            console.log(this.basketGoods)
                         });
                     });
 
