@@ -121,6 +121,7 @@ class Basketlist {
                     const delBtn = document.querySelectorAll('.buy_btn__del');
                     delBtn.forEach(item => {
                         item.addEventListener('click', () => {
+                            this.basketGoods.splice(item, 1)
                             console.log('Применение метода .removechild')
                         });
                     });
@@ -142,6 +143,7 @@ class Basketlist {
                     const buyBtn = document.querySelectorAll('.buy-btn');
                     buyBtn.forEach(item => {
                         item.addEventListener('click', () => {
+                            this.basketGoods.push(item);
                             // Временный вывод в консоль вместо добавления на страницу корзины.
                             console.log(data)
                         });
