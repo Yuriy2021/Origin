@@ -3,19 +3,68 @@
 
 <head>
   <title>eShop</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    .cart {
+      width: 600px;
+      height: 400px;
+      position: absolute;
+      top: 100px;
+      left: calc(50% - 300px);
+      border: 1px solid #ccc;
+      background-color: white;
+      border-radius: 4px;
+    }
+
+    .active {
+      display: flex;
+    }
+
+    .goods-item {
+      width: 80px;
+      height: 100px;
+      background-color: cornflowerblue;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 20px;
+    }
+  </style>
 </head>
 
 <body>
-  <header>
-    <button class="cart-button" type="button">Корзина</button>
-  </header>
-  <main>
+  <div id="app">
+    <header>
+      <input type="text" class="goods-search" v-model="searchLine" />
+      <button class="search-button" type="button" v-on:click="onSearch">Искать</button>
+      <button class="cart-button" type="button" v-on:click="onToggleCart">Корзина</button>
+    </header>
+    <main>
+      <div class="goods-list">
+        <template v-if="this.filteredGoods.length > 0">
+          <div class="good-card" v-for="good of filteredGoods" v-bind:key="good.id_product">
+            <h2 v-on:click="addToCart(good)">{{ good.product_name }}</h2>
+            <p>${{ good.price }}</p>
+          </div>
+        </template>
+        <template v-else>
+          <h2>Список пуст</h2>
+        </template>
 
-    <div class="goods-list"></div>
+      </div>
+    </main>
+    <div class="cart" v-if="isVisibleCart">
+      <span class="close" v-on:click="onToggleCart">X</span>
 
-  </main>
+      <div class="goods-list">
+        <div class="good-card" v-for="good of cart" v-bind:key="good.id_product">
+          <h2>{{ good.product_name }}</h2>
+          <p>${{ good.price }}</p>
+          <button v-on:click="removeFromCart">X</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script src="script.js"></script>
 </body>
 
