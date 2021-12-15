@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>eShop</title>
   <style>
-    .cart {
+    .modal{
       width: 600px;
       height: 400px;
       position: absolute;
@@ -14,27 +16,17 @@
       background-color: white;
       border-radius: 4px;
     }
-
-    .active {
-      display: flex;
-    }
-
-    .goods-item {
-      width: 80px;
-      height: 100px;
-      background-color: cornflowerblue;
-      border-radius: 5px;
-      padding: 10px;
-      margin: 20px;
+    .close{
+      position: absolute;
+      top: 5px;
+      right: 5px;
     }
   </style>
 </head>
-
 <body>
   <div id="app">
     <header>
-      <input type="text" class="goods-search" v-model="searchLine" />
-      <button class="search-button" type="button" v-on:click="onSearch">Искать</button>
+      <search v-on:search="onSearch"></search>
       <button class="cart-button" type="button" v-on:click="onToggleCart">Корзина</button>
     </header>
     <main>
@@ -45,27 +37,27 @@
             <p>${{ good.price }}</p>
           </div>
         </template>
-        <template v-else>
+        <template v-else >
           <h2>Список пуст</h2>
         </template>
-
+        
       </div>
     </main>
-    <div class="cart" v-if="isVisibleCart">
-      <span class="close" v-on:click="onToggleCart">X</span>
+    
+    <div class="modal" v-if="isVisibleCart">
+      <span class="close" v-on:click="onToggleCart">x</span>
 
       <div class="goods-list">
         <div class="good-card" v-for="good of cart" v-bind:key="good.id_product">
           <h2>{{ good.product_name }}</h2>
           <p>${{ good.price }}</p>
-          <button v-on:click="removeFromCart">X</button>
+          <button v-on:click="removeFromCart">Х</button>
         </div>
       </div>
     </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-  <script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
-
 </html>
