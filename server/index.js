@@ -5,7 +5,7 @@ const path = require('path');
 const port = 3001
 const catalog_path = path.resolve(__dirname, './data/catalog.json')
 const cart_path = path.resolve(__dirname, './data/cart.json')
-const static_dir = path.resolve(__dirname, './public/')
+const static_dir = path.resolve(__dirname, '../dist/')
 
 const app = express()
 
@@ -13,7 +13,7 @@ app.use(express.json())
 
 app.use(express.static(static_dir))
 
-app.get('/catalogData', (req, res) => {
+app.get('/catalog', (req, res) => {
   fs.readFile(catalog_path, 'utf8', (err, data) => {
     res.send(data);
   })
@@ -25,7 +25,7 @@ app.get('/cart', (req, res) => {
   })
 });
 
-app.post('/addToCart', (req, res) => {
+app.post('/cart', (req, res) => {
   fs.readFile(cart_path, 'utf8', (err, data) => {
     let cart = JSON.parse(data);
 
@@ -47,13 +47,13 @@ app.post('/addToCart', (req, res) => {
   });
 });
 
-app.post('/removeFromCart', (req, res) => {
+app.delete('/cart/:id', (req, res) => {
   fs.readFile(cart_path, 'utf8', (err, data) => {
     let cart = JSON.parse(data);
 
     
 
-    const itemId = req.body.id;
+    const itemId = req.params.id;
     const idx = cart.findIndex((good) => good.id == itemId)
 
     if(idx >= 0) {
